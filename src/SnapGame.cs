@@ -26,6 +26,21 @@ namespace CardGames
 			{
 				myGame.FlipNextCard ();
 			}
+			 
+			if (myGame.IsStarted) {
+
+					if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT) && SwinGame.KeyTyped (KeyCode.vk_RSHIFT)) {
+						//addsound
+					}
+					else if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT)){
+						myGame.PlayerHit (0);
+					}
+					else if (SwinGame.KeyTyped (KeyCode.vk_RSHIFT)){
+						myGame.PlayerHit (1);
+					}
+				}
+
+
 		}
 
 		/// <summary>
@@ -66,6 +81,27 @@ namespace CardGames
 			myGame.Update(); // just ask the game to do this...
 		}
 
+			/*private static void HandleUserInput (Snap myGame) 
+			{
+				SwinGame.ProcessEvents();
+				if (SwinGame.KeyTyped (KeyCode.vk_SPACE)){
+					myGame.FlipNextCard ();
+			}
+
+	            if (myGame.IsStarted) {
+
+					if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT) && SwinGame.KeyTyped (KeyCode.vk_RSHIFT)) {
+						//sound effect
+					}
+					else if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT)){
+						myGame.PlayerHit (0);
+					}
+					else if (SwinGame.KeyTyped (KeyCode.vk_RSHIFT)){
+						myGame.PlayerHit (1);
+					}
+				}
+			}
+			*/
         public static void Main()
         {
             //Open the game window
