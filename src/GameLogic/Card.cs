@@ -69,12 +69,13 @@ namespace CardGames.GameLogic
         /// </summary>
         public static Card RandomCard()
         {
-            Rank randomRank = (Rank)( SwinGame.Rnd ((int)Rank.KING) + 1);
-            Suit randomSuit = (Suit)( SwinGame.Rnd ((int)Suit.SPADE + 1));
-            
-            Card randomCard = new Card (randomRank, randomSuit);
-
-            return randomCard;
+            //This code doesn't seem very useful
+            //Rank randomRank = (Rank)( SwinGame.Rnd ((int)Rank.KING) + 1);
+            //Suit randomSuit = (Suit)( SwinGame.Rnd ((int)Suit.SPADE + 1));
+            //
+            //Card randomCard = new Card (randomRank, randomSuit);
+//
+            //return randomCard;
         }
 
         /// <summary>
