@@ -69,6 +69,7 @@ namespace CardGames.GameLogic
         /// </summary>
         public static Card RandomCard()
         {
+            //actually, it is pretty useful, but i'm demonstrating merge conflict.
             Rank randomRank = (Rank)( SwinGame.Rnd ((int)Rank.KING) + 1);
             Suit randomSuit = (Suit)( SwinGame.Rnd ((int)Suit.SPADE + 1));
             
