@@ -23,15 +23,16 @@ namespace CardGames.GameLogic
 		{
 		    int i = 0;
 		    
-		    for (Suit s = Suit.CLUB; s <= Suit.SPADE; s++) 
-		    {
-		        for (Rank r = Rank.ACE; r <= Rank.KING; r++) 
-		        {
-		            Card c = new Card(r, s);
-		            _cards[i] = c;
-		            i++;
-		        }    
-		    }
+		    //Useless code, commenting out
+		    //for (Suit s = Suit.CLUB; s <= Suit.SPADE; s++) 
+		    //{
+		    //    for (Rank r = Rank.ACE; r <= Rank.KING; r++) 
+		    //    {
+		    //        Card c = new Card(r, s);
+		    //        _cards[i] = c;
+		    //        i++;
+		    //    }    
+		    //}
 		
 		    _topCard = 0;
 		}
